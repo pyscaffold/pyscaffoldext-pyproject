@@ -3,17 +3,12 @@ pyscaffoldext-pyproject
 =======================
 
 
-Add a short description here!
+This is a simple PyScaffold extension which serves as a blueprint.
+It's sole purpose is to create a ``pyproject.toml`` file according to `[PEP 518]`_.
+This extension was bootstrapped with PyScaffold::
 
+    putup pyscaffoldext-pyproject -p pyproject --namespace pyscaffoldext --no-skeleton
 
-Description
-===========
+Read more about creating an extension under http://pyscaffold.org/.
 
-A longer description of your project goes here...
-
-
-Note
-====
-
-This project has been set up using PyScaffold 3.0.3. For details and usage
-information on PyScaffold see http://pyscaffold.org/.
+.. _[PEP 518]: https://www.python.org/dev/peps/pep-0518/
