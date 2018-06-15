@@ -1,3 +1,6 @@
+tags
+.pytest_cache
+
 # Temporary and binary files
 *~
 *.py[cod]
