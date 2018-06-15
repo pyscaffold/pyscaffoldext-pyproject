@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/pyscaffold/pyscaffoldext-pyproject.svg?branch=master
+    :target: https://travis-ci.org/pyscaffold/pyscaffoldext-pyproject
+
 =======================
 pyscaffoldext-pyproject
 =======================
