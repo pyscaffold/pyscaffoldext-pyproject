@@ -24,8 +24,11 @@ script:
   - tox
 after_success:
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
+after_script:
+  - travis-cleanup
 cache:
   apt: true
   pip: true
   directories:
     - $HOME/.cache/pip
+    - $HOME/miniconda
