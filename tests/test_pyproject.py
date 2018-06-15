@@ -7,6 +7,7 @@ import pytest
 
 from pyscaffold.api import create_project
 from pyscaffold.cli import run
+
 from pyscaffoldext.pyproject.extension import PyProject
 
 

@@ -3,8 +3,7 @@
 Implementation of a simple extension that additionally
 adds the file pyproject.toml
 """
-from pyscaffold.api import Extension
-from pyscaffold.api import helpers
+from pyscaffold.api import Extension, helpers
 
 from .templates import pyproject_toml
 
