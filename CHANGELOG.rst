@@ -2,9 +2,12 @@
 Changelog
 =========
 
+Version 0.1.1
+=============
+
+- respect update flag and don't overwrite
+
 Version 0.1
 ===========
 
-- Feature A added
-- FIX: nasty bug #1729 fixed
-- add your changes here!
+- initial release
