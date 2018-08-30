@@ -41,6 +41,8 @@ class PyProject(Extension):
         Returns:
             struct, opts: updated project representation and options
         """
+        if opts['update'] and not opts['force']:
+            return struct, opts
         file = [opts['project'], 'pyproject.toml']
         content = pyproject_toml(opts)
         struct = helpers.ensure(struct, file, content)
