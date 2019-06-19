@@ -1,6 +1,3 @@
-tags
-.pytest_cache
-
 # Temporary and binary files
 *~
 *.py[cod]
@@ -22,6 +19,7 @@ __pycache__/*
 .pydevproject
 .settings
 .idea
+tags
 
 # Package files
 *.egg
@@ -35,12 +33,14 @@ htmlcov/*
 .tox
 junit.xml
 coverage.xml
+.pytest_cache/
 
 # Build and docs folder/files
 build/*
 dist/*
 sdist/*
 docs/api/*
+docs/_rst/*
 docs/_build/*
 cover/*
 MANIFEST

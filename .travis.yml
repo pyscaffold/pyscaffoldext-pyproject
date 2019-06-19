@@ -13,16 +13,16 @@ matrix:
     - env: DISTRIB="conda" PYTHON_VERSION="3.6" COVERAGE="false"
 install:
   - source tests/travis_install.sh
+  - pip install -r requirements.txt
+  # ^  DEPRECATION WARNING:
+  # The automatic creation of a `requirements.txt` file is deprecated.
+  # See `Dependency Management` in the docs for other options.
 before_script:
   - git config --global user.email "you@example.com"
   - git config --global user.name "Your Name"
 script:
-  - tox
-  - |
-    if [[ "$COVERAGE" == "true" ]]; then
-      pre-commit install
-      pre-commit run --all-files
-    fi
+  - python setup.py test
+  # ^  Change here if using tox
 after_success:
   - if [[ "$COVERAGE" == "true" ]]; then coveralls || echo "failed"; fi
 after_script:
@@ -30,5 +30,4 @@ after_script:
 cache:
   pip: true
   directories:
-    - $HOME/.cache/pip
     - $HOME/miniconda
