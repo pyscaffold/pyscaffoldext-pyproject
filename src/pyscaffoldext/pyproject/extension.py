@@ -12,7 +12,7 @@ __copyright__ = "Florian Wilhelm"
 __license__ = "mit"
 
 
-class PyProject(Extension):
+class Pyproject(Extension):
     """Generate pyproject.toml"""
     def activate(self, actions):
         """Activate extension

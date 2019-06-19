@@ -8,7 +8,7 @@ import pytest
 from pyscaffold.api import create_project
 from pyscaffold.cli import run
 
-from pyscaffoldext.pyproject.extension import PyProject
+from pyscaffoldext.pyproject.extension import Pyproject
 
 
 @pytest.fixture
@@ -24,7 +24,7 @@ def tmpfolder(tmpdir):
 def test_create_project_with_pyproject(tmpfolder):
     # Given options with the pyproject extension,
     opts = dict(project="proj",
-                extensions=[PyProject('pyproject')])
+                extensions=[Pyproject('pyproject')])
 
     # when the project is created,
     create_project(opts)
