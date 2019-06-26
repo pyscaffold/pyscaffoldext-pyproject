@@ -40,10 +40,13 @@ if [[ "$DISTRIB" == "conda" ]]; then
     source activate ./.venv
 fi
 
+# for all
+pip install -U pip setuptools
+pip install tox
+
 if [[ "$COVERAGE" == "true" ]]; then
     pip install coverage coveralls
 fi
-
 
 travis-cleanup() {
     printf "Cleaning up environments ... "  # printf avoids new lines
