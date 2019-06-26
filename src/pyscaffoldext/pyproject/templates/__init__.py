@@ -16,7 +16,7 @@ def get_template(name):
         :obj:`string.Template`: template
     """
     file_name = "{name}.template".format(name=name)
-    data = resource_string("pyscaffoldext.markdown.templates",
+    data = resource_string("pyscaffoldext.pyproject.templates",
                            file_name)
     return string.Template(data.decode("UTF-8"))
 

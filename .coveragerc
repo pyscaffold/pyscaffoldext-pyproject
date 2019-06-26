@@ -1,8 +1,8 @@
 # .coveragerc to control coverage.py
 [run]
 branch = True
-source = pyproject
-# omit = bad_file.py
+include = *pyscaffoldext/pyproject/*
+
 
 [paths]
 source =
