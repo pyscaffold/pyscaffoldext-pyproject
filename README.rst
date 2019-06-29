@@ -1,5 +1,11 @@
 .. image:: https://travis-ci.org/pyscaffold/pyscaffoldext-pyproject.svg?branch=master
     :target: https://travis-ci.org/pyscaffold/pyscaffoldext-pyproject
+.. image:: https://img.shields.io/coveralls/github/pyscaffold/pyscaffoldext-pyproject/master.svg
+    :alt: Coveralls
+    :target: https://coveralls.io/r/pyscaffold/pyscaffoldext-pyproject
+.. image:: https://img.shields.io/pypi/v/pyscaffoldext-pyproject.svg
+    :alt: PyPI-Server
+    :target: https://pypi.org/project/pyscaffoldext-pyproject
 
 =======================
 pyscaffoldext-pyproject
