@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 0.2.1
+=============
+
+- Cosmetic changes
+
 Version 0.2
 ===========
 
