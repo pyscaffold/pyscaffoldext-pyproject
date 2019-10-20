@@ -11,16 +11,6 @@ from pyscaffold.cli import run
 from pyscaffoldext.pyproject.extension import Pyproject
 
 
-@pytest.fixture
-def tmpfolder(tmpdir):
-    """Create a temporary folder, chdir into it and execute the test.
-
-    Additionally inject the tmpdir object as parameter in the test functions.
-    """
-    with tmpdir.as_cwd():
-        yield tmpdir
-
-
 def test_create_project_with_pyproject(tmpfolder):
     # Given options with the pyproject extension,
     opts = dict(project="proj",
