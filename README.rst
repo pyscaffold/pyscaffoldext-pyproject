@@ -1,5 +1,6 @@
-.. image:: https://travis-ci.org/pyscaffold/pyscaffoldext-pyproject.svg?branch=master
-    :target: https://travis-ci.org/pyscaffold/pyscaffoldext-pyproject
+.. image:: https://api.cirrus-ci.com/github/pyscaffold/pyscaffoldext-pyproject.svg?branch=master
+    :alt: Built Status
+    :target: https://cirrus-ci.com/github/pyscaffold/pyscaffoldext-pyproject
 .. image:: https://img.shields.io/coveralls/github/pyscaffold/pyscaffoldext-pyproject/master.svg
     :alt: Coveralls
     :target: https://coveralls.io/r/pyscaffold/pyscaffoldext-pyproject
