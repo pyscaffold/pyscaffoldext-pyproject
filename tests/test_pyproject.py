@@ -11,8 +11,7 @@ from pyscaffoldext.pyproject.extension import Pyproject
 
 def test_create_project_with_pyproject(tmpfolder):
     # Given options with the pyproject extension,
-    opts = dict(project="proj",
-                extensions=[Pyproject('pyproject')])
+    opts = dict(project="proj", extensions=[Pyproject("pyproject")])
 
     # when the project is created,
     create_project(opts)

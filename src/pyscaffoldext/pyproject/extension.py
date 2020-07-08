@@ -14,6 +14,7 @@ __license__ = "mit"
 
 class Pyproject(Extension):
     """Generate pyproject.toml"""
+
     def activate(self, actions):
         """Activate extension
 
@@ -23,10 +24,7 @@ class Pyproject(Extension):
         Returns:
             list: updated list of actions
         """
-        return self.register(
-            actions,
-            self.add_pyproject_toml,
-            after='define_structure')
+        return self.register(actions, self.add_pyproject_toml, after="define_structure")
 
     def add_pyproject_toml(self, struct, opts):
         """Add the pyproject.toml file
@@ -40,9 +38,9 @@ class Pyproject(Extension):
         Returns:
             struct, opts: updated project representation and options
         """
-        if opts['update'] and not opts['force']:
+        if opts["update"] and not opts["force"]:
             return struct, opts
-        file = [opts['project'], 'pyproject.toml']
+        file = [opts["project"], "pyproject.toml"]
         content = pyproject_toml(opts)
         struct = helpers.ensure(struct, file, content)
         return struct, opts
