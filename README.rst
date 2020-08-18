@@ -12,9 +12,15 @@
 pyscaffoldext-pyproject
 =======================
 
+.. warning::
+   **DEPRECATED**: PyScaffold v4 supports ``pyproject.toml``
+   out-of-the-box, without the help of extensions.
+   Migration to the newest version in recommended, since it offers better
+   support for `PEP 517`_ and `PEP 518`_.
+
 
 This is a simple PyScaffold extension which serves as a blueprint.
-It's sole purpose is to create a ``pyproject.toml`` file according to `[PEP 518]`_.
+It's sole purpose is to create a ``pyproject.toml`` file according to `PEP 518`_.
 This extension was bootstrapped with PyScaffold's `custom-extension`_::
 
     putup pyscaffoldext-pyproject --custom-extension
@@ -29,4 +35,5 @@ and note that ``putup -h`` shows a new option ``--pyproject``.
 Using this will create a default ``pyproject.toml``.
 
 .. _custom-extension: https://github.com/pyscaffold/pyscaffoldext-custom-extension
-.. _[PEP 518]: https://www.python.org/dev/peps/pep-0518/
+.. _PEP 517: https://www.python.org/dev/peps/pep-0517/
+.. _PEP 518: https://www.python.org/dev/peps/pep-0518/
