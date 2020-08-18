@@ -14,8 +14,8 @@ pyscaffoldext-pyproject
 
 .. warning::
    **DEPRECATED**: PyScaffold v4 supports ``pyproject.toml``
-   out-of-the-box, without the help of extensions.
-   Migration to the newest version in recommended, since it offers better
+   out-of-the-box, without the help of an extra extension.
+   Migration to the newest version is recommended, since it offers better
    support for `PEP 517`_ and `PEP 518`_.
 
 
